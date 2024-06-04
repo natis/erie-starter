@@ -1,0 +1,35 @@
+.social-follow {
+	padding: 0 2.0rem;
+	.margin-container {
+		@extend .sct-primary;
+		align-items: start;
+		background: url('/src/styles/images/erie-background.png') $primary-color top left repeat;
+		border-radius: 2.0rem;
+		display: grid;
+		gap: 0 2.0rem;
+		grid-template-columns: 1.5fr .5fr;
+		color: white;
+		padding: 5.0rem 10.0rem;
+		@media screen and (max-width: $bp-medium) {
+			display: flex;
+			flex-direction: column;
+		}
+		@media screen and (max-width: $bp-small) {
+			background-image: none;
+			padding: 2.4rem;
+		}
+	}
+}
+.social-follow-headline {
+	@extend .h3;
+	color: white;
+	margin: 0;
+}
+.social-follow-icons {
+	align-items: normal;
+	height: auto;
+	list-style: none;
+	margin: 0.5rem 0 0;
+	padding: 0;
+	width: auto;
+}

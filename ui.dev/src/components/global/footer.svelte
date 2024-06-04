@@ -1,0 +1,104 @@
+<footer>
+	<div class="footer-frame">
+		<a href="/" class="footer-logo"><img src="/images/erie-logo-footer.webp" alt="ERIE Insurance" /></a>
+		<nav class="footer-nav">
+			<ul>
+				<li><a href="/">Get a Quote</a></li>
+				<li><a href="/">File a Claim</a></li>
+				<li><a href="/">Roadside Assistance</a></li>
+				<li><a href="/">Pay a Bill</a></li>
+			</ul>
+			<ul>
+				<li><a href="/">Support</a></li>
+				<li><a href="/">Contact Us</a></li>
+				<li><a href="/">Investors</a></li>
+				<li><a href="/">Newsroom</a></li>
+			</ul>
+			<ul class="footer-social">
+				<li>
+					<a href="/">
+						<span class="sr-only">Facebook</span>
+						<svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" role="image">
+							<title>Icon for Facebook</title>
+							<path d="M30 15.055C30 6.74 23.284 0 15 0 6.716 0 0 6.74 0 15.055c0 7.06 4.843 12.985 11.376 14.612V19.656H8.283v-4.6h3.093v-1.983c0-5.125 2.31-7.5 7.323-7.5.95 0 2.59.187 3.261.374v4.17c-.354-.037-.969-.055-1.733-.055-2.46 0-3.41.935-3.41 3.366v1.627h4.9l-.842 4.6h-4.058V30C24.244 29.1 30 22.752 30 15.055" fill="#FFF" fill-rule="evenodd"/>
+						</svg>
+					</a><!-- /icon-facebook -->
+				</li>
+				<li>
+					<a href="/">
+						<span class="sr-only">Twitter</span>
+						<svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" role="image">
+							<title>Icon for Twitter</title>
+							<g fill="#FEFEFE" fill-rule="evenodd">
+								<path d="M15.14 13.807 11.41 8.475H9.423l4.62 6.607.58.831 3.954 5.657h1.989l-4.846-6.932z"/>
+								<path d="m17.968 22.5-4.002-5.824-5.01 5.824H7.66l5.73-6.66-5.73-8.34h4.37l3.79 5.515L20.566 7.5h1.295l-5.465 6.352 5.943 8.648h-4.37zM15 0C6.716 0 0 6.716 0 15c0 8.286 6.716 15 15 15 8.284 0 15-6.714 15-15 0-8.284-6.716-15-15-15z"/>
+							</g>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="/">
+						<span class="sr-only">LinkedIn</span>
+						<svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="image">
+							<title>Icon for LinkedIn</title>
+							<defs>
+								<path d="M0 0h30v30H0z"/>
+							</defs>
+							<g fill="none" fill-rule="evenodd">
+								<mask fill="#fff">
+									<use xlink:href="#q13soldxda"/>
+								</mask>
+								<path d="M22.5 22.168h-3.216v-5.174c0-1.3-.465-2.188-1.629-2.188-.887 0-1.418.6-1.65 1.177-.085.207-.106.493-.106.783v5.402h-3.215s.042-8.765 0-9.671H15.9v1.37c.429-.661 1.192-1.598 2.899-1.598 2.115 0 3.702 1.381 3.702 4.353v5.546zM9.297 11.174h-.021c-1.079 0-1.776-.742-1.776-1.671 0-.948.72-1.672 1.818-1.672 1.1 0 1.778.724 1.798 1.671 0 .93-.698 1.672-1.819 1.672zM7.69 22.168h3.217v-9.671H7.689v9.671zM15 0C6.715 0 0 6.716 0 15c0 8.285 6.715 15 15 15 8.284 0 15-6.715 15-15 0-8.284-6.716-15-15-15z" fill="#FEFEFE" mask="url(#oq9bzxiatb)"/>
+							</g>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="/">
+						<span class="sr-only">YouTube</span>
+						<svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="image">
+							<title>Icon for YouYube</title>
+							<g fill="none" fill-rule="evenodd">
+								<path fill="#FEFEFE" d="M13.279 17.502 17.677 15l-4.398-2.502z"/>
+								<g>
+									<mask fill="#fff">
+										<use xlink:href="#lso69aqvwa"/>
+									</mask>
+									<path d="M23.062 19.077a2.115 2.115 0 0 1-1.488 1.497c-1.312.354-6.574.354-6.574.354s-5.262 0-6.575-.354a2.116 2.116 0 0 1-1.488-1.497C6.586 17.756 6.586 15 6.586 15s0-2.756.351-4.077a2.116 2.116 0 0 1 1.488-1.497C9.738 9.072 15 9.072 15 9.072s5.262 0 6.574.354a2.115 2.115 0 0 1 1.488 1.497c.352 1.321.352 4.077.352 4.077s0 2.756-.352 4.077M15 0C6.716 0 0 6.716 0 15c0 8.284 6.716 15 15 15 8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15" fill="#FEFEFE" mask="url(#dnmp6ezmsb)"/>
+								</g>
+							</g>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="/">
+						<span class="sr-only">Instagram</span>
+						<svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="image">
+							<title>Icon for Instagram</title>
+							<g fill="none" fill-rule="evenodd">
+								<path d="M19.004 11.896a.9.9 0 0 1 0-1.8.9.9 0 0 1 0 1.8m-4.003 6.955a3.852 3.852 0 1 1 0-7.703 3.851 3.851 0 0 1 0 7.703m5.846-8.274c-.137-.35-.299-.6-.561-.863a2.335 2.335 0 0 0-.862-.562c-.264-.102-.662-.224-1.393-.257-.79-.036-1.027-.043-3.03-.043h-.673V8.85c-1.398.002-1.666.01-2.358.042-.731.034-1.128.155-1.392.259-.35.136-.6.299-.863.56a2.33 2.33 0 0 0-.561.864c-.103.264-.225.66-.259 1.392-.036.79-.043 1.026-.043 3.03 0 2.002.007 2.24.043 3.03.034.732.156 1.129.259 1.393.136.35.299.599.561.861.263.263.512.425.863.561.264.103.66.225 1.392.259.79.036 1.029.044 3.031.044 2.003 0 2.24-.008 3.03-.044.731-.033 1.129-.155 1.393-.258.35-.136.6-.299.862-.561.262-.263.425-.512.561-.862.102-.264.225-.661.258-1.392.037-.79.044-1.028.044-3.03 0-2-.007-2.239-.044-3.03-.033-.73-.156-1.127-.258-1.392" fill="#FEFEFE"/>
+								<path d="M15 12.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5" fill="#FEFEFE"/>
+								<g>
+									<mask fill="#fff">
+										<use xlink:href="#qn2orykkaa"/>
+									</mask>
+									<path d="M22.455 18.092c-.038.798-.164 1.343-.35 1.82a3.683 3.683 0 0 1-.864 1.329 3.668 3.668 0 0 1-1.328.865c-.477.186-1.023.312-1.822.349-.8.037-1.054.045-3.091.045s-2.293-.008-3.092-.045c-.799-.037-1.344-.163-1.82-.349a3.671 3.671 0 0 1-1.33-.865 3.668 3.668 0 0 1-.864-1.328c-.185-.478-.312-1.022-.348-1.821-.037-.8-.046-1.055-.046-3.092s.009-2.292.046-3.093c.035-.798.162-1.343.347-1.82.193-.494.45-.912.867-1.329a3.673 3.673 0 0 1 1.328-.864c.477-.186 1.022-.312 1.82-.349.8-.037 1.056-.045 3.092-.045h-.001H15 15c2.036 0 2.29.008 3.09.045.8.037 1.344.163 1.822.349a3.66 3.66 0 0 1 1.329.864c.417.417.673.835.865 1.33.185.476.311 1.021.349 1.82.035.8.045 1.055.045 3.092s-.01 2.292-.045 3.092M15 0C6.717 0 0 6.717 0 15c0 8.283 6.717 15 15 15 8.283 0 15-6.717 15-15 0-8.283-6.717-15-15-15" fill="#FEFEFE" mask="url(#sfn539rahb)"/>
+								</g>
+								<path d="M15 11.148zM14.998 7.5h.003z" fill="#FEFEFE"/>
+							</g>
+						</svg>
+					</a>
+				</li>
+			</ul><!-- /social-media -->
+			<ul class="utility-nav">
+				<li><a href="/">Privacy Policy</a></li>
+				<li><a href="/">Disclaimer</a></li>
+				<li><a href="/">States of Operation</a></li>
+				<li><a href="/">Terms of Use</a></li>
+				<li><a href="/">Site Map</a></li>
+				<li><a href="/">Accessibility Statement</a></li>
+			</ul><!-- /utility-nav-->
+			<p class="copyright">©2010-2023 ERIE Indemnity Co.</p>
+		</nav><!-- /footer-nav -->
+	</div><!-- /footer-frame -->
+</footer>

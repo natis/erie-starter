@@ -1,0 +1,32 @@
+label {
+	font-size: 1.6rem;
+	line-height: 1;
+	letter-spacing: normal;
+	.active & {
+		font-size: 1.2rem;
+	}
+}
+input {
+	&::placeholder {
+		font-size: 1.6rem;
+		letter-spacing: normal;
+		line-height: 1;
+	}
+}
+.animated-labels {
+	position: relative;
+}
+.animated-label {
+	left: 1.7rem;
+	padding: 0 0.5rem;
+	position: absolute;
+	top: 1.6rem;
+	transition: all 0.3s;
+	header & {
+		background-color: $secondary-color;
+	}
+	.active & {
+		left: 1.0rem;
+		top: -0.6rem;
+	}
+}

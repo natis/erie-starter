@@ -1,0 +1,51 @@
+.image-hero {
+	background-color: $secondary-color;
+	margin: 0 auto;
+	max-width: 166.0rem;
+	position: relative;
+	@media screen and (min-width: $bp-medium + 1) {
+		min-height: 45.0rem;
+	}
+	img {
+		height: 45.0rem;
+		object-fit: cover;
+		width: 100%;
+		@media screen and (max-width: $bp-medium) {
+			height: auto;
+		}
+	}
+}
+.image-hero-content {
+	color: $primary-color-alternate;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	margin: 0 0 0 10.0rem;
+	max-width: 50.0rem;
+	padding: 4.0rem 5.6rem;
+	position: absolute;
+	top: 0;
+	@media screen and (max-width: $bp-medium) {
+		margin: 0;
+		max-width: none;
+		position: static;
+	}
+	@media screen and (max-width: $bp-small) {
+		padding: 4.0rem 2.7rem;
+	}
+}
+.image-hero-headline {
+	@extend .h2;
+	color: $primary-color-alternate;
+}
+.image-hero-primary-btn {
+	@extend .btn-primary;
+}
+.image-hero-secondary-btn {
+	@extend .btn-secondary;
+}
+.image-hero-actions {
+	margin: 2.0rem 0;
+}

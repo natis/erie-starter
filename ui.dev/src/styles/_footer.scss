@@ -1,0 +1,100 @@
+footer {
+	background-color: $primary-color-alternate;
+	color: white;
+	a {
+		color: white;
+		text-decoration: none;
+	}
+}
+.footer-frame {
+	display: grid;
+	gap: 0 16.0rem;
+	grid-template-columns: 15.0rem 1fr;
+	margin: 0 auto;
+	max-width: 166.0rem;
+	padding: 5.0rem 1.6rem 4.0rem;
+	@media screen and (max-width: $bp-medium) {
+		display: block;
+	}
+	@media screen and (max-width: $bp-small) {
+		padding: 5.0rem 2.5rem 4.0rem;
+	}
+}
+.footer-logo {
+	img {
+		max-width: 15.0rem;
+	}
+}
+.footer-nav {
+	display: grid; 
+	font-size: 1.5rem;
+	grid-template-columns: 1fr 1fr 1fr; 
+	grid-template-rows: max-content max-content max-content;  
+	gap: 0 0; 
+	grid-template-areas: 
+		'. . footer-social'
+		'utility-nav utility-nav utility-nav'
+		'copyright copyright copyright';
+	@media screen and (max-width: $bp-medium) {
+		margin-top: 4.0rem;
+	}
+	@media screen and (max-width: $bp-small) {
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+			'.'
+			'.'
+			'footer-social'
+			'utility-nav'
+			'copyright';
+	}
+	li {
+		margin-bottom: 2.0rem;
+	}
+	a {
+		font-weight: 500;
+	}
+}
+.footer-social {
+	display: flex;
+	gap: 1.5rem;
+	grid-area: footer-social;
+	justify-self: end;
+	@media screen and (max-width: $bp-small) {
+		justify-self: start;
+		margin-top: 4.0rem
+	}
+	a {
+		transition: opacity 0.3s ease-in-out;
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}
+.utility-nav {
+	border-top: 0.1rem solid rgba(white, .2);
+	display: flex;
+	flex-wrap: wrap;
+	grid-area: utility-nav;
+	margin-top: 4.0rem;
+	padding-top: 3.0rem;
+	@media screen and (max-width: $bp-small) {
+		margin-top: 3.0rem
+	}
+	li {
+		margin: 0 3.0rem 2.0rem 0;
+		&:last-child {
+			margin-right: 0;
+		}
+		@media screen and (max-width: $bp-small) {
+			margin: 0 1.5rem 1.0rem 0;
+		}
+	}
+	a {
+		font-size: 1.2rem;
+		white-space: nowrap;
+	}
+}
+.copyright {
+	font-size: 1.2rem;
+	grid-area: copyright;
+}

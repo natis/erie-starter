@@ -1,0 +1,174 @@
+.homepage-hero {
+	background: url('/src/styles/images/erie-background.png') $primary-color top left repeat;
+	color: white;
+	margin-top: -9.0rem;
+	padding-top: 9.0rem;
+	@media screen and (max-width: 1150px) {
+		margin-top: 0;
+		padding-top: 15.0rem;
+	}
+	@media screen and (max-width: 750px) {
+		background-image: none;
+		padding-bottom: 5.0rem;
+	}
+	.component-frame {
+		align-items: center;
+		display: grid;
+		gap: 0 12.0rem;
+		grid-template-columns: 60.8rem minmax(30.0rem, 60.8rem);
+		justify-content: space-between;
+		padding-right: 0;
+		position: relative;
+		z-index: 50;
+		@media screen and (max-width: 1150px) {
+			display: block;
+			padding: 0 0 0 5.7rem;
+		}
+		@media screen and (max-width: 750px) {
+			display: block;
+			padding: 0 0 0 2.7rem;
+		}
+	}
+	picture {
+		justify-self: end;
+		margin: 0 0 -5.0rem;
+		@media screen and (max-width: 1150px) {
+			margin: 0;
+		}
+	}
+	img {
+		border-radius: 2.0rem 0 0 2.0rem;
+		height: auto;
+		width: 100%;
+		@media screen and (max-width: 1150px) {
+			margin-bottom: -5.0rem;
+		}
+		@media screen and (max-width: 750px) {
+			margin-bottom: 5.0rem;
+		}
+	}
+	a {
+		color: white;
+	}
+	li {
+		display: inline-block;
+		margin-left: 3.0rem;
+		&:first-child {
+			margin-left: 0;
+		}
+		@media screen and (max-width: 750px) {
+			display: block;
+			margin: 0 0 1.0rem;
+		}
+	}
+}
+.homepage-hero-content {
+	margin-top: -10.0rem;
+	@media screen and (max-width: 750px) {
+		margin-right: 2.7rem;
+	}
+}
+.homepage-headline {
+	color: white;
+	.focal-text {
+		display: block;
+	}
+}
+.user-actions {
+	bottom: 4.0rem;
+	position: absolute;
+	@media screen and (max-width: 1150px) {
+		margin: 5.0rem 0;
+		position: static;
+	}
+}
+.actions-headline {
+	font-size: 1.8rem;
+	font-weight: 600;
+	letter-spacing: 0.26rem;
+	line-height: 1.11;
+	text-transform: uppercase;
+}
+.accent-bar {
+	background-color: $primary-color-accent;
+	height: 2.5rem;
+	margin: 0 0 2.0rem;
+	position: relative;
+	width: 75%;
+	z-index: 100;
+	@media screen and (max-width: 1150px) {
+		height: 1.5rem;
+	}
+	@media screen and (max-width: 750px) {
+		margin-top: -10.0rem;
+	}
+}
+.quote-wizard {
+	align-items: center;
+	background-color: white;
+	display: grid;
+	grid-template-columns: 27.0rem 14.5rem auto;
+	border-radius: 3.7rem;
+	justify-content: space-between;
+	max-width: 67.0rem;
+	padding: 0 0.7rem;
+	@media screen and (max-width: 750px) {
+		grid-template-columns: 1fr;
+		margin: 3.0rem 0 0 0;
+		padding: 1.5rem 2.4rem;
+		.btn {
+			margin: 1.0rem 0;
+		}
+	}
+	label {
+		color: $secondary-color-accent;
+		font-size: 1.2rem;
+		line-height: 1.17;
+		padding: 0.7rem 3.0rem;
+		&:first-child {
+			border-right: 1px solid rgba($primary-color-alternate, .2);
+			@media screen and (max-width: 750px) {
+				border-bottom: 1px solid rgba($primary-color-alternate, .2);	
+				border-right: 0;
+			}
+		}
+		@media screen and (max-width: 750px) {
+			margin: 0 0 1.0rem;
+			padding: 0.7rem 0;
+		}
+	}
+	input, select {
+		border: 0;
+		color: $primary-color-alternate;
+		font-size: 1.6rem;
+		font-weight: 600;
+		padding: 0.7rem 0;
+		width: 100%;
+		&::placeholder {
+			color: $primary-color-alternate;
+			font-size: 1.6rem;
+			font-weight: 600;
+		}
+	}
+	select {
+		appearance: none;
+		background-color: transparent;
+		position: relative;
+		z-index: 150;
+	}
+	.select-frame {
+		position: relative;
+		&::after {
+			background: url('/src/styles/images/arrow-down.svg') transparent top left no-repeat;
+			background-size: cover;
+			content: '';
+			height: 2.4rem;
+			position: absolute;
+			right: 1.0rem;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 2.4rem;
+			z-index: 100;
+		}
+	}
+}

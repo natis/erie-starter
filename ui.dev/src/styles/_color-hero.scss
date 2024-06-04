@@ -1,0 +1,37 @@
+.color-hero {
+	background: url('/src/styles/images/erie-background.png') $primary-color top left repeat;
+	padding: 0 2.0rem;
+	@media screen and (max-width: $bp-small) {
+		background-image: none;
+	}
+	.margin-container {
+		color: white;
+		padding: 6.0rem;
+		text-align: center;
+		@media screen and (max-width: $bp-medium) {
+			display: flex;
+			flex-direction: column;
+		}
+		@media screen and (max-width: $bp-small) {
+			padding: 5.0rem 2.0rem;
+		}
+	}
+}
+.color-hero-actions {
+	@media screen and (max-width: $bp-medium) {
+		text-align: center;
+		margin: 4.0rem 0 0;
+		.btn {
+			margin: 0 2.0rem 2.0rem;
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+.color-hero-default {
+	@extend .btn-primary;
+}
+.color-hero-secondary {
+	@extend .btn-secondary;
+}

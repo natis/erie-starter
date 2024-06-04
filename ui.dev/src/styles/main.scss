@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import '_reset';
+@import '_variables';
+@import '_typography';
+@import '_forms';
+@import '_containers';
+@import '_buttons';
+@import '_icons';
+@import '_header';
+@import '_footer';
+
+// Components
+@import '_breadcrumbs';
+@import '_tables';
+@import '_alert-banner';
+@import '_promo-banner';
+@import '_color-hero';
+@import '_social-follow';
+@import '_image-hero';
+@import '_homepage-hero';
+
+body {
+	background-color: $primary-color-alternate;
+	overscroll-behavior: none;
+	&.mobile-nav-shown {
+		overflow: hidden;
+	}
+}
+main {
+	background-color: white;
+	padding: 9.0rem 0;
+}
+nav {
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+.component-frame {
+	margin: 0 auto;
+	max-width: 166.0rem;
+	padding: 0 1.6rem;
+}
+p {
+	margin: 0 0 1.5rem;
+}
+sub, sup {
+	display: inline-block;
+	position: static;
+}
+sup {
+	margin-top: 0.5rem;
+	vertical-align: top;
+}
+sub {
+	vertical-align: bottom;
+}
+.mobile-only {
+	display: none;
+	@media screen and (max-width: 1149px) {
+		display: block;
+	}
+}
+.desktop-only {
+	display: none;
+	@media screen and (min-width: 1150px) {
+		display: block;
+	}
+}
+.margin-tb-large {
+	margin: 0 0 2.0rem;
+}
+.margin-tb-small {
+	margin: 0 0 2.0rem;
+}
+.margin-tb-none {
+	margin: 0;
+}

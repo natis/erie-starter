@@ -1,0 +1,19 @@
+.breadcrumbs {
+	border-bottom: 0.1rem solid rgba($primary-color-alternate, .1);
+	font-size: 1.4rem;
+	line-height: 1.71;
+	margin: 0 auto;
+	max-width: 123.2rem;
+	padding: 1.2rem 1.6rem;
+	li {
+		display: inline-block;
+	}
+	a {
+		color: $primary-color-alternate;
+		font-weight: 500;
+		transition: color .25s ease-in-out;
+		&:hover {
+			color: $secondary-color-alternate;
+		}
+	}
+}

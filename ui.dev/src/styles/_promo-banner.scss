@@ -1,0 +1,45 @@
+.promo-banner {
+	padding: 0 2.0rem;
+	.margin-container {
+		@extend .sct-primary;
+		align-items: center;
+		background: url('/src/styles/images/erie-background.png') transparent top left repeat;
+		border-radius: 2.0rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		color: white;
+		padding: 6.0rem;
+		@media screen and (max-width: $bp-medium) {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+		}
+		@media screen and (max-width: $bp-small) {
+			padding: 4.0rem 2.0rem;
+		}
+	}
+}
+.promo-banner-headline {
+	@extend .h2;
+	color: white;
+	margin: 0;
+}
+.promo-actions {
+	text-align: right;
+	@media screen and (max-width: $bp-medium) {
+		text-align: center;
+		margin: 4.0rem 0 0;
+		.btn {
+			margin: 0 2.0rem 2.0rem;
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+.promo-default {
+	@extend .btn-primary;
+}
+.promo-secondary {
+	@extend .btn-secondary;
+}

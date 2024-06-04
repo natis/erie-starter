@@ -1,0 +1,171 @@
+.alert-banner {
+    background: $primary-color-alternate;
+    color: white;
+    display: none;
+    &.show {
+        display: block;
+		width: 100%;
+		@media print {
+			display: none;
+		}
+    }
+	@media print {
+		display: none;
+	}
+    .margin-frame {
+        @media screen and (max-width: $bp-small) {
+            padding: 0 2.4rem;
+        }
+    }
+    &.high-priority {
+        background: $primary-color-accent;
+		color: $primary-color-alternate;
+        .alert-prev {
+            &::before {
+                content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{encodecolor($primary-color-alternate)}' role='presentation' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+            }
+        }
+        .alert-next {
+            &::before {
+                content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{encodecolor($primary-color-alternate)}' role='presentation' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+            }
+        }
+        .alert-banner-close {
+            &::after {
+                content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{encodecolor($primary-color-alternate)}' viewBox='0 0 16 16'%3E%3Cpath d='M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z'/%3E%3C/svg%3E");
+            }
+        }
+        .alert-message-cta {
+            color: $primary-color-alternate;
+            &::after {
+                background: $primary-color-alternate;
+            }
+        }
+    }
+    button {
+        &:focus-visible {
+            outline: 1px solid $primary-color-alternate;
+        }
+    }
+}
+.alert-banner-container {
+    align-items: start;
+    display: grid;
+    grid-template-areas: 'alert-pagination alert-content alert-close';
+    grid-template-columns: 15% 1fr 15%;
+    padding: 1.3rem 0;
+    @media screen and (max-width: $bp-small) {
+        grid-template-areas: 'alert-pagination alert-close'
+                             'alert-content alert-content';
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr;
+    }
+    &.single {
+        @media screen and (max-width: $bp-small) {
+            grid-template-areas: 'alert-content alert-close';
+            grid-template-columns: 85% 15%;
+        }
+        .alert-banner-content {
+            @media screen and (max-width: $bp-small) {
+                margin-top: 0;
+            }
+        }
+    }
+}
+.alert-banner-pagination {
+    display: flex;
+    font-size: 1.4rem;
+    grid-area: alert-pagination;
+    .alert-prev,
+    .alert-next {
+        background: transparent;
+        border: none;
+        &:not([disabled]) {
+            cursor: pointer;
+        }
+        &[disabled] {
+            opacity: 0.3;
+        }
+        &::before {
+            background-size: 20px 20px;
+            display: block;
+            height: 1.8rem;
+            width: 1.8rem;
+        }
+    }
+    .alert-info {
+        margin: 0 0.8rem;
+    }
+    
+    .alert-prev {
+        @media screen and (max-width: $bp-small) {
+            padding-left: 0;
+        }
+        &::before {
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{encodecolor($primary-color-alternate)}' role='presentation' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+        }
+    }
+    .alert-next {
+        &::before {
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{encodecolor($primary-color-alternate)}' role='presentation' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+        }
+    }
+}
+.alert-banner-content {
+    grid-area: alert-content;
+    line-height: 1.25;
+    text-align: center;
+    @media screen and (max-width: $bp-small) {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        margin-top: 1rem;
+        text-align: left;
+    }
+    .alert-banner-message {
+        display: none;
+        &.show {
+            display: block;
+        }
+    }
+}
+.alert-message {
+    margin-right: 2.0rem;
+}
+.alert-message-cta {
+    color: $primary-color-alternate;
+    display: inline-block;
+    font-size: 1.5rem;
+    line-height: 1;
+    position: relative;
+    text-decoration: none;
+    &::after {
+        background: $primary-color-alternate;
+        bottom: -0.3rem;
+        content: "";
+        height: 2px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        width: 100%;
+    }
+}
+.close-banner-wrapper {
+    grid-area: alert-close;
+    line-height: 1;
+    text-align: right;
+    .alert-banner-close {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        &::after {
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{encodecolor($primary-color-alternate)}' viewBox='0 0 16 16'%3E%3Cpath d='M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z'/%3E%3C/svg%3E");
+            display: inline-block;
+            height: 1.6rem;
+            vertical-align: top;
+            width: 1.6rem;
+        }
+        @media screen and (max-width: $bp-small) {
+            padding-right: 0;
+        }
+    }
+}

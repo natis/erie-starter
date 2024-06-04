@@ -1,0 +1,22 @@
+[class*='icon'] {
+	align-items: center;
+	border-radius: 5.0rem;
+	display: flex;
+	height: 6.4rem;
+	justify-content: center;
+	margin-bottom: 1.5rem;
+	width: 6.4rem;
+	svg {
+		display: block;
+	}
+}
+.icon-primary {
+	background-color: white;
+	transition: .5s background-color ease-in-out;
+	svg {
+		path, rect {
+			stroke: $primary-color-alternate;
+			transition: .5s stroke ease-in-out;
+		}
+	}
+}
